@@ -1,0 +1,39 @@
+:root{
+    --primary:#D81324;
+}
+.custom-carousel .owl-item.center .custom-text{
+    background: var(--primary) !important;
+}
+
+.custom-carousel .owl-item.center .custom-text *{
+    color: #fff !important;
+}
+
+.custom-carousel .owl-item .custom-text,.custom-carousel .owl-item.center .custom-text *{
+    transition: .5s;
+}
+
+.custom-carousel .owl-dots{
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 24px;
+}
+
+.custom-carousel .owl-dot{
+    position: relative;
+    display: inline-block !important;
+    border: 1px solid #ccc !important;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    transition: .5s;
+}
+.custom-carousel .owl-dot.active{
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    display: none !important;
+}
